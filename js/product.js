@@ -6,12 +6,12 @@ angular.module('assessment')
     scope: {
     product: '=product'
     },
-    // link: function(scope) {
-    //   scope.imageHidden = false;
-    //   scope.toggleImage = function() {
-    //     scope.imageHidden = !scope.imageHidden;
-    //   }
-    // }
+    link: function(scope) {
+      scope.imageHidden = false;
+      scope.toggleImage = function() {
+        scope.imageHidden = !scope.imageHidden;
+      }
+    }
   }
 
 })
